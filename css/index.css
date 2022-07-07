@@ -741,6 +741,9 @@ footer img{
     .content-price div:not(.price) {
         width: 70%;
     }
+    .services h2::after{
+        transform: translate(-285px,40px);
+    }
     .portoflio{
         height: 80vh;
     }
