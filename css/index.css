@@ -1,0 +1,763 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+    height: 9px;
+   
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #6195ff;
+    border-radius: 20%;
+}
+body{
+    font-family: 'varela round' , sans-serif;
+}
+header{
+    background: #161515f9 url(../imges/ddd.jpg);
+    background-blend-mode: overlay;
+    background-repeat:no-repeat ;
+    background-size:cover;
+    height: 100vh;
+}
+.header-content{
+    background-color: rgba(0, 0, 0, .5);
+    /* position: fixed; */
+    width:100% ;
+    /* z-index: 0; */
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    padding:10px 0px ;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.navbar nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+.home-link{
+    border-bottom: 4px solid blue;
+}
+nav ul li a:not(.home-link):hover{
+    border-bottom: 4px solid blue;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:#fff;
+}
+.content h1{
+    font-size: 40px;
+    padding: 10px;
+}
+.content p{
+    padding-bottom:15px ;
+    width: 100%;
+}
+.buttons{
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+}
+.buttons button{
+    padding:10px 15px;
+    cursor: pointer;
+    margin-right:5px ;
+    font-weight: bold;
+    font-size: 15px;
+}
+.buttons :first-child:hover{
+    opacity: .8;
+}
+.buttons :nth-child(2){
+    background-color: blue;
+    color: #fff;
+}
+/*  */
+.main{
+    position: relative;
+    height:130vh ;
+    padding: 30px 0px;
+}
+.main h2{
+    text-align: center;
+    padding: 30px 0px;
+    margin: 30px 0px;
+    font-size: 35px;
+}
+.main span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main h2::after{
+    content:"" ;
+    width: 70px;
+    height: 4px;
+    background-color: #6195ff;
+    position: absolute;
+    top: 130px;
+    transform: translate(-200px,0px);
+    margin-top: 10px;
+}
+.main .section-content{
+    display: flex;
+    justify-content: space-around;
+}
+.main .section-content div {
+     width: 25%;
+     height: 35vh;
+     margin-bottom: 20px;
+     border: 1px solid #888;
+     transition: all .5s;
+}
+.main div i{
+    padding:8px ;
+    color: #6195ff;
+}
+.section-content h3{
+    padding: 20px 15px;
+    font-size: 25px;
+}
+.section-content p{
+    padding: 10px 14px;
+    width: 80%;
+    letter-spacing: 2px;
+    opacity: .5;
+
+    transform: translate(0px,0px);
+}
+.section-content a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 15px;
+    color: #6195ff;
+}
+.main .section-content div:hover{
+    background-color: rgba(0, 0, 0, 0.753);
+}
+.main .section-content div:hover h3{
+    color: #fff;
+}
+/*  */
+.Featured-work{
+    background-color: rgb(232, 232, 232);
+    padding: 40px 0px;
+}
+.Featured-work h2{
+    text-align: center;
+    padding: 30px 0px;
+    margin: 30px 0px;
+    font-size: 35px;
+}
+.Featured-work h2::after{
+    content:"" ;
+    width: 70px;
+    height: 4px;
+    background-color: #6195ff;
+    position: absolute;
+    transform: translate(-200px,40px);
+    margin-top: 10px;
+}
+.works{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.parent{
+    position: relative;
+    width: 30%;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.parent:hover{
+    opacity: .6;
+}
+.child{
+    background-color: #fff;
+    width: 80%;
+}
+.parent:hover .container{
+    opacity: .8;
+}
+.child img{
+    width: 80%;
+    height: 50vh;
+    margin-left: 30px;
+}
+.container{
+   position: absolute;
+   top: -3px;
+   width: 80%;
+   height: 52vh;
+   background-color: #000;
+   text-align: center;
+   opacity: 0;
+}
+.container h3{
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: #6195ff;
+    transition: all .5s;
+}
+.container p{
+    color: #fff;
+    font-weight: bold;
+    transition: all .3s;
+    width: 100%;
+    transform: translate(0px,0px);
+
+}
+.container i{
+    color: #6195ff;
+    margin-top: 20px;
+}
+.container:hover h3{
+    transform: translate(0px,-15px);
+}
+.container:hover p{
+    transform: translate(0px,-12px);
+}
+.container:hover i{
+    transform: translate(0px,-10px);
+}
+/*  */
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+.services div{
+    width: 45%;
+}
+.services h2{
+    padding: 30px 0px;
+    margin: 30px 0px;
+    font-size: 35px;
+}
+.services h2::after{
+    content:"" ;
+    width: 70px;
+    height: 4px;
+    background-color: #6195ff;
+    position: absolute;
+    transform: translate(-262px,40px);
+    margin-top: 10px;
+}
+.services p{
+    width: 80%;
+    padding-bottom: 20px;
+    transform: translate(0px,0px);
+}
+.services div img{
+    width:80% ;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.services .services-items{
+    display: flex;
+    margin-left: 20px;
+}
+.services-items ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right:10px ;
+    display: inline-block;
+}
+.services .services-items ul li:not(.first-services-items){
+    background-color: #a8a8a8;
+}
+.services .services-items ul li:not(.first-services-items):hover{
+    background-color: #6195ff;
+}
+.first-services-items{
+    background-color: #6195ff;
+}
+/*  */
+.info{
+    background:#333232d6 url(../imges/eee.jpeg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    padding: 30px 0px;
+    height: 60vh;
+}
+.clients{
+    width: 80%;
+    margin: auto ;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    color: #fff;
+    transform: translate(0px,100px);
+}
+.clients i{
+    color: #6195ff;
+    margin-bottom: 9px;
+}
+.clients h4{
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.clients p{
+    transform: translate(-30px ,15px);
+}
+/*  */
+.price-table{
+    padding: 40px 0px;
+    height: 100vh;
+    background-color: #e8e8e8;
+}
+h5{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 30px;
+}
+h5::after{
+    content:"" ;
+    width: 60px;
+    height:4px ;
+    background-color: blue;
+    position: absolute;
+    transform: translate(-130px,39px);
+}
+.content-price{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 70px;
+}
+.content-price div{
+    text-align: center;
+    height: 65vh;
+}
+.content-price div:hover{
+    background-color: #0b0c0cb8;
+}
+.content-price div:hover h2{
+    color: red;
+}
+.content-price div:hover h3{
+    color: red;
+}
+.content-price div:not(.price){
+    border: 2px solid rgba(0, 0, 0, 0.258);
+    padding: 20px;
+    width: 25%;
+    box-shadow: 2px 2px  #000;
+}
+.content-price div h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    color:rgba(0, 0, 0, 0.537) ;
+    font-size: 15px;
+}
+.content-price div .price{
+    border: 2px solid rgba(0, 0, 255, 0.324);
+  border-radius: 50%;
+  width: 80px;
+  height:80px ;
+  margin: 20px 0px;
+  position: relative;
+  left: 90px;
+  background-color: #fff;
+}
+.price h2{
+    margin-top: 5px;
+    font-weight: 800;
+}
+.price h2 p{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding:4px 0px ;
+    transform: translate(0px,0px);
+    width: inherit;
+}
+.content-price div p:not(.month){
+    padding:7px 0px ;
+    color:rgba(0, 0, 0, 0.537) ;
+}
+.content-price div button{
+    margin: 20px 0px;
+    border:2px solid blue;
+    padding:4px 10px ;
+}
+/*  */
+.portoflio{
+    background:#333232d6 url(../imges/zzz.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    padding: 40px 0px;
+    height: 50vh;
+}
+.portoflio-info{
+    width: 80%;
+    margin:auto ;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    color: rgba(255, 255, 255, 0.842);
+    font-weight: 800;
+}
+.portoflio-info div{
+    width: 80%;
+}
+.portoflio-info img{
+    width: 70px;
+    height:70px ;
+    border-radius: 50%;
+}
+.portoflio-info p{
+    margin-left: 30px;
+    transform: translate(50px,0px);
+}
+.portoflio-info p:not(.portoflio-p){
+    color: #6195ff;
+    font-weight: bold;
+}
+.portoflio-p{
+    padding:20px 0px ;
+    width: 90%;
+    font-size: 14px;
+}
+/*  */
+.team .parent{
+    width: 30%;
+}
+.team .parent:hover{
+    opacity: .4;
+}
+.team .parent:hover .child h6{
+    color: #fff;
+}
+.team .parent:hover .child p{
+    color: #6195ff;
+}
+.team .child{
+    height: 53vh;
+    background-color: #d1caca;
+}
+.team .child img {
+    width: 80%;
+    height: 35vh;
+    margin-top: 20px;
+}
+.team h6,p{
+    transform: translate(70px ,15px);
+    width: 40%;
+}
+.team h6{
+    padding-bottom: 9px;
+}
+.team .container .icons{
+    background-color: #6195ff;
+    width: 20%;
+    margin:40px auto 0px;
+    padding-top: 8px;
+}
+.team .icons i{
+    color: #fff;
+    font-size: 20px;
+}
+footer{
+    background-color: #4c4d52;
+    position: relative;
+    height: 60vh;
+}
+.footer{
+    width: 80%;
+    margin:auto ;
+    transform: translate(100px,80px);
+}
+footer img{
+    width: 20%;
+    transform: translate(90px,0px);
+}
+.footer .icons{
+    display: flex;
+}
+.icons i{
+    color: #6195ff;
+    font-size: 40px;
+    margin:10px ;
+}
+/*  1200,991,680,450*/
+@media(max-width: 991px){
+    .navbar nav{
+        display: none;
+    }
+    .content h1{
+        width: 100%;
+        font-size: 30px;
+    }
+    .content p{
+        transform: translate(0px,0px);
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .buttons button {
+        padding: 14px 7px;
+    }
+    .main .section-content div {
+        height: 45vh;
+    }
+    .main .section-content div {
+        height: 42vh;
+    }
+    .team h6, p {
+        transform: translate(10px ,15px);
+        width: 80%;
+    }
+    .content-price div .price{
+        position: relative;
+        left: 50px;
+    }
+}
+@media(max-width: 770px){
+    .content h1 {
+        width: 100%;
+        font-size: 25px;
+    }
+    .content p{
+        width: 100%;
+        text-align: center;
+    }
+    .buttons button {
+        padding: 13px 0px;
+    }
+    .main{
+        height: 110vh;
+    }
+    .main .section-content div {
+        height: 35vh;
+    }
+    .section-content h3 {
+        font-size: 17px;
+        width: 100%;
+    }
+    .section-content p {
+        width: 100%;
+    }
+    .section-content p{
+        letter-spacing: 1px;
+    }
+    .services div {
+        width: 45%;
+        transform: translate(22px, 13px);
+    }
+    .services div img{
+        width: 90%;
+    }
+    .content-price div .price {
+        position: relative;
+        left: 25px;
+    }
+    .content-price div p:not(.month){
+        width: 90%;
+    }
+    .portoflio-info div{
+        width: 100%;
+    }
+    .portoflio-info p {
+        font-size: 10px;
+    }
+
+}
+@media(max-width: 690px){
+    body{
+        overflow-x: hidden;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    .child img {
+        width: 90%;
+        height: 50vh;
+        margin-left: 8px;
+    }
+    .content-price div:not(.price) {
+        width: 30%;
+    }
+    .content-price div{
+        height: 59vh;
+    }
+}
+@media(max-width: 450px){
+    section{
+        height: inherit;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .content h1 {
+        font-size: 14px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .buttons{
+        display: block;
+    }
+    .buttons button{
+        margin-top: 9px;
+        width: 100%;
+    }
+    .main {
+        height: inherit;
+    }
+    .main .section-content{
+        display: block;
+    }
+    .main .section-content div {
+        width: 50%;
+        margin:0px auto 20px;
+    }
+    .Featured-work .works{
+        display: block;
+    }
+    .parent {
+        width: 80%;
+        margin: auto;
+    }
+    .child img{
+        margin-left: 12px;
+    }
+    .services{
+       display: block;
+       height: 130vh;
+    }
+    .services div {
+        width: 70%;
+        margin: auto;
+    }
+    .services div img {
+        width: 100%;
+    }
+    .price-table{
+        height: 220vh;
+    }
+    .content-price{
+        display: block;
+    }
+    .content-price div:not(.price) {
+        width: 60%;
+        margin:0px auto 20px;
+    }
+    .content-price div .price {
+        position: relative;
+        left: 56px;
+    }
+    .portoflio-info div{
+        width: inherit;
+    }
+    .portoflio-info p{
+        transform: translate(0px,0px);
+        margin: 0;
+        width: 100%;
+        font-size: 8px;
+    }
+    .works{
+        display: block;
+    }
+    h5{
+        padding-bottom:20px ;
+    }
+    h5::after{
+        transform: translate(-130px,32px);
+
+    }
+    .team .parent {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media(max-width: 360px){
+    .content h1 {
+        font-size: 10px;
+    } 
+    .content p {
+        font-size: 8px;
+    }
+    .buttons button {
+        padding: 10px 0px;
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main h2::after{
+        position: absolute;
+        top: 104px;
+        transform: translate(-143px,0px);
+    }
+    .main .section-content div {
+        width: 60%;
+    }
+    .info{
+        height: 98vh;
+    }
+    .clients {
+        display: block;
+        transform: translate(0px,0px);
+        width: 90%;
+        margin: auto;
+    }
+    .clients div{
+        margin-bottom: 20px;
+    }
+    .clients div p{
+        transform: translate(10px ,-19px);
+    }
+    .price-table h5::after {
+        transform: translate(-130px,41px);
+    }
+    .content-price div:not(.price) {
+        width: 70%;
+    }
+    .portoflio{
+        height: 80vh;
+    }
+    .portoflio-info{
+        display: block;
+    }
+    .portoflio-info div div span{
+        font-size: 10px;
+    }
+    .portoflio-info p {
+        transform: translate(73px,0px);
+    }
+    footer {
+        height: 94vh;
+    }
+    .footer .icons{
+        display: block;
+    }
+    footer img {
+        width: 50%;
+        transform: translate(-27px,-22px);
+    }
+}
