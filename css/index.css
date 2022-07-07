@@ -711,8 +711,11 @@ footer img{
     }
     .main h2::after{
         position: absolute;
-        top: 104px;
-        transform: translate(-143px,0px);
+        top: 108px;
+        transform: translate(-111px,0px);
+    }
+    .main span{
+        font-size: 14px;
     }
     .main .section-content div {
         width: 60%;
@@ -722,7 +725,7 @@ footer img{
     }
     .clients {
         display: block;
-        transform: translate(0px,0px);
+        transform: translate(101px,0px);
         width: 90%;
         margin: auto;
     }
@@ -753,11 +756,17 @@ footer img{
     footer {
         height: 94vh;
     }
+    .footer {
+        transform: translate(0px,79px);
+    }
     .footer .icons{
-        display: block;
+        transform: translate(0px,0px);
+    }
+    .footer .icons i{
+        font-size: 15px;
     }
     footer img {
-        width: 50%;
-        transform: translate(-27px,-22px);
+        width: 70%;
+        transform: translate(13px,0px);
     }
 }
