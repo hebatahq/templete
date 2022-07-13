@@ -634,7 +634,7 @@ footer img{
         display: block;
     }
     .main .section-content div {
-        width: 50%;
+        width: 80%;
         margin:0px auto 20px;
     }
     .Featured-work .works{
@@ -718,7 +718,7 @@ footer img{
         font-size: 14px;
     }
     .main .section-content div {
-        width: 60%;
+        width: 80%;
     }
     .info{
         height: 98vh;
@@ -739,7 +739,7 @@ footer img{
         transform: translate(-130px,41px);
     }
     .content-price div:not(.price) {
-        width: 70%;
+        width: 80%;
     }
     .services h2::after{
         transform: translate(-285px,40px);
